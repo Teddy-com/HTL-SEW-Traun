@@ -8,7 +8,7 @@ package dev.teddy_com.Lernen._19_11_2024;
 
 public class Loops {
 
-    public static void Start(){
+    public void Start(){
 
         //1
         byte a = 127;//1 byte mit maximal value
@@ -50,5 +50,23 @@ public class Loops {
          */
 
 
+        begruesePerson("Kelderer");//so wird eine methode gerufen und ein Argument Weiter gegeben
+        printNumbers();//diese methode hat KEINE argumente die man weitergeben kann also sie hat immer eine fixe funktion wie z. B. eine ausgabe die immer gleich sein soll
+        System.out.println("Summe: " + addiere(5, 10));//gibt die summe aus durch die methode wo 5 und 10 weiter gegeben wurde
+
+    }
+
+    public void begruesePerson(String name) {
+        System.out.println("Hallo, " + name + "!");//gibt Hallo + den namen aus
+    }
+
+    public void printNumbers() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);//gibt 0 bis 9 aus
+        }
+    }
+
+    public int addiere(int a, int b) {
+        return a + b;//gibt a + b zurück
     }
 }
